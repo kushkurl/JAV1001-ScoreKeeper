@@ -1,0 +1,196 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+
+    <ImageView
+        android:id="@+id/myImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.5"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/claycourt" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="30dp"
+        android:textSize="27dp"
+        android:textColor="#4d1406"
+        android:text="Roland Garros" />
+
+    <TextView
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="138dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="100dp"
+        android:background="#cf6026"
+        android:ems="3"
+        android:inputType="textPersonName"
+        android:minHeight="20dp"
+        android:shadowRadius="@integer/material_motion_duration_long_1"
+        android:text="Rafael Nadal"
+        android:textColor="@color/white"
+        tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/editTextTextPersonName3"
+        android:layout_width="138dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="122dp"
+        android:background="#cf6026"
+        android:ems="3"
+        android:inputType="textPersonName"
+        android:minHeight="20dp"
+        android:shadowRadius="@integer/material_motion_duration_long_1"
+        android:text="Roger Federer"
+        android:textColor="@color/white"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="82.5dp"
+        android:layout_marginRight="17dp"
+        android:background="#4d1406"
+        android:ems="1"
+        android:text="MEN'S SINGLES - FINAL"
+        android:textAlignment="gravity"
+        android:textColor="@color/white"
+        android:textSize="10dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25dp"
+        app:srcCompat="@drawable/icon" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="153dp"
+        android:layout_marginTop="100dp"
+        android:background="#cf6026"
+        android:inputType="textPersonName"
+        android:minWidth="18dp"
+        android:minHeight="19dp"
+        android:shadowRadius="@integer/material_motion_duration_long_1"
+        android:text="7"
+        android:textColor="@color/white"
+        android:textSize="1.5dp"
+        tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="173dp"
+        android:layout_marginTop="100dp"
+        android:background="#cf6026"
+        android:inputType="textPersonName"
+        android:minWidth="18dp"
+        android:minHeight="19dp"
+        android:shadowRadius="@integer/material_motion_duration_long_1"
+        android:text="7"
+        android:textColor="@color/white"
+        android:textSize="1.5dp"
+        tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="193dp"
+        android:layout_marginTop="100dp"
+        android:background="#cf6026"
+        android:inputType="textPersonName"
+        android:minWidth="18dp"
+        android:minHeight="19dp"
+        android:shadowRadius="@integer/material_motion_duration_long_1"
+        android:text="7"
+        android:textColor="@color/white"
+        android:textSize="1.5dp"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="153dp"
+        android:layout_marginTop="122dp"
+        android:background="#cf6026"
+        android:inputType="textPersonName"
+        android:minWidth="18dp"
+        android:minHeight="19dp"
+        android:shadowRadius="@integer/material_motion_duration_long_1"
+        android:text="6"
+        android:textColor="@color/white"
+        android:textSize="1.5dp"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="173dp"
+        android:layout_marginTop="122dp"
+        android:background="#cf6026"
+        android:inputType="textPersonName"
+        android:minWidth="18dp"
+        android:minHeight="19dp"
+        android:shadowRadius="@integer/material_motion_duration_long_1"
+        android:text="6"
+        android:textColor="@color/white"
+        android:textSize="1.5dp"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="193dp"
+        android:layout_marginTop="122dp"
+        android:background="#cf6026"
+        android:inputType="textPersonName"
+        android:minWidth="18dp"
+        android:minHeight="19dp"
+        android:shadowRadius="@integer/material_motion_duration_long_1"
+        android:text="6"
+        android:textColor="#000000"
+        android:textSize="1.5dp"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginLeft="215dp"
+        android:layout_marginTop="95dp"
+        android:backgroundTint="#4d1406"
+        android:text="Add Score"
+        android:textSize="8dp"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginLeft="215dp"
+        android:layout_marginTop="116dp"
+        android:backgroundTint="#4d1406"
+        android:text="Add Score"
+        android:textSize="8dp"
+        tools:ignore="TouchTargetSizeCheck" />
+
+</RelativeLayout>
