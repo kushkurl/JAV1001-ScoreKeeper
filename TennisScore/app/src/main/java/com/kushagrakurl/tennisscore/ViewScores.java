@@ -1,189 +1,134 @@
 package com.kushagrakurl.tennisscore;
 
-import android.content.Context;
-import android.content.res.TypedArray;
-import android.graphics.Canvas;
-import android.graphics.Color;
-import android.graphics.Paint;
-import android.graphics.drawable.Drawable;
-import android.text.TextPaint;
-import android.util.AttributeSet;
+import android.os.Bundle;
+
+import android.view.Gravity;
 import android.view.View;
+import android.widget.Button;
+import android.widget.RadioGroup;
+import android.widget.TextView;
+
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.google.android.material.slider.Slider;
 
 /**
  * TODO: document your custom view class.
  */
-public class ViewScores extends View {
-    private String mExampleString; // TODO: use a default from R.string...
-    private int mExampleColor = Color.RED; // TODO: use a default from R.color...
-    private float mExampleDimension = 0; // TODO: use a default from R.dimen...
-    private Drawable mExampleDrawable;
+public class ViewScores extends AppCompatActivity implements View.OnClickListener {
+    Button incScore;
+    Button decScore;
+    RadioGroup selectedPlayer;
+    Slider jumpVal;
+    TextView set1_1;
+    TextView set1_2;
+    TextView set2_1;
+    TextView set2_2;
+    TextView set3_1;
+    TextView set3_2;
+    AlertDialog.Builder alert;
 
-    private TextPaint mTextPaint;
-    private float mTextWidth;
-    private float mTextHeight;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.sample_view_scores);
 
-    public ViewScores(Context context) {
-        super(context);
-        init(null, 0);
-    }
+        selectedPlayer = (RadioGroup)findViewById(R.id.radioGroup);
+        jumpVal = (Slider)findViewById(R.id.jumpValue);
 
-    public ViewScores(Context context, AttributeSet attrs) {
-        super(context, attrs);
-        init(attrs, 0);
-    }
+        incScore = (Button)findViewById(R.id.addScore);
+        decScore = (Button)findViewById(R.id.removeScore);
+        incScore.setOnClickListener(this);
+        decScore.setOnClickListener(this);
 
-    public ViewScores(Context context, AttributeSet attrs, int defStyle) {
-        super(context, attrs, defStyle);
-        init(attrs, defStyle);
-    }
+        set1_1 = (TextView)findViewById(R.id.set1_1);
+        set1_2 = (TextView)findViewById(R.id.set1_2);
+        set2_1 = (TextView)findViewById(R.id.set2_1);
+        set2_2 = (TextView)findViewById(R.id.set2_2);
+        set3_1 = (TextView)findViewById(R.id.set3_1);
+        set3_2 = (TextView)findViewById(R.id.set3_2);
 
-    private void init(AttributeSet attrs, int defStyle) {
-        // Load attributes
-        final TypedArray a = getContext().obtainStyledAttributes(
-                attrs, R.styleable.ViewScores, defStyle, 0);
-
-        mExampleString = a.getString(
-                R.styleable.ViewScores_exampleString);
-        mExampleColor = a.getColor(
-                R.styleable.ViewScores_exampleColor,
-                mExampleColor);
-        // Use getDimensionPixelSize or getDimensionPixelOffset when dealing with
-        // values that should fall on pixel boundaries.
-        mExampleDimension = a.getDimension(
-                R.styleable.ViewScores_exampleDimension,
-                mExampleDimension);
-
-        if (a.hasValue(R.styleable.ViewScores_exampleDrawable)) {
-            mExampleDrawable = a.getDrawable(
-                    R.styleable.ViewScores_exampleDrawable);
-            mExampleDrawable.setCallback(this);
-        }
-
-        a.recycle();
-
-        // Set up a default TextPaint object
-        mTextPaint = new TextPaint();
-        mTextPaint.setFlags(Paint.ANTI_ALIAS_FLAG);
-        mTextPaint.setTextAlign(Paint.Align.LEFT);
-
-        // Update TextPaint and text measurements from attributes
-        invalidateTextPaintAndMeasurements();
-    }
-
-    private void invalidateTextPaintAndMeasurements() {
-        mTextPaint.setTextSize(mExampleDimension);
-        mTextPaint.setColor(mExampleColor);
-        mTextWidth = mTextPaint.measureText(mExampleString);
-
-        Paint.FontMetrics fontMetrics = mTextPaint.getFontMetrics();
-        mTextHeight = fontMetrics.bottom;
+        alert = new AlertDialog.Builder(this);
     }
 
     @Override
-    protected void onDraw(Canvas canvas) {
-        super.onDraw(canvas);
+    public void onClick(View view) {
+        int selectedPlayerID = selectedPlayer.getCheckedRadioButtonId();
+        int jumpPointBy = (int) jumpVal.getValue();
+        int set11 = Integer.parseInt(set1_1.getText().toString());
+        int set12 = Integer.parseInt(set1_2.getText().toString());
+        int set21 = Integer.parseInt(set2_1.getText().toString());
+        int set22 = Integer.parseInt(set2_2.getText().toString());
+        int set31 = Integer.parseInt(set3_1.getText().toString());
+        int set32 = Integer.parseInt(set3_2.getText().toString());
 
-        // TODO: consider storing these as member variables to reduce
-        // allocations per draw cycle.
-        int paddingLeft = getPaddingLeft();
-        int paddingTop = getPaddingTop();
-        int paddingRight = getPaddingRight();
-        int paddingBottom = getPaddingBottom();
+        switch (view.getId()){
+            case R.id.addScore:{
+                if( Math.abs(set11 - set12) < 2 ){
+                    if (selectedPlayerID == 1){
+                        set1_1.setText(set11 += 1);
+                    }
+                    else {
+                        set1_2.setText(set12 += 1);
+                    }
+                }
+                else if( Math.abs(set21 - set22) < 2 ){
+                    if (selectedPlayerID == 1){
+                        set2_1.setText(set21 += 1);
+                    }
+                    else {
+                        set2_2.setText(set22 += 1);
+                    }
+                }
+                else if( Math.abs(set31 - set32) < 2 ){
+                    if (selectedPlayerID == 1){
+                        set3_1.setText(set31 += 1);
+                    }
+                    else {
+                        set3_2.setText(set32 += 1);
+                    }
+                }
+                else {
+                    alert.setMessage("Cannot add score to final score").setTitle("Match Over!");
+                    AlertDialog alertBox = alert.create();
+                    alertBox.setTitle("Match Over!");
+                    alertBox.show();
+                }
+            }
+            case R.id.removeScore:{
+                if( Math.abs(set11 - set12) < 2 && set11 > 0 && set12 > 0){
+                    if (selectedPlayerID == 1){
+                        set1_1.setText(set11 -= 1);
+                    }
+                    else {
+                        set1_2.setText(set12 -= 1);
+                    }
+                }
+                else if( Math.abs(set21 - set22) < 2 && set21 > 0 && set22 > 0){
+                    if (selectedPlayerID == 1){
+                        set2_1.setText(set21 -= 1);
+                    }
+                    else {
+                        set2_2.setText(set22 -= 1);
+                    }
+                }
+                else if( Math.abs(set31 - set32) < 2 && set31 > 0 && set32 > 0){
+                    if (selectedPlayerID == 1){
+                        set3_1.setText(set31 -= 1);
+                    }
+                    else {
+                        set3_2.setText(set32 -= 1);
+                    }
+                }
+                else {
+                    alert.setMessage("Cannot add score to final score").setTitle("Match Over!");
+                    AlertDialog alertBox = alert.create();
+                    alertBox.setTitle("Match Over!");
+                    alertBox.show();
+                }
 
-        int contentWidth = getWidth() - paddingLeft - paddingRight;
-        int contentHeight = getHeight() - paddingTop - paddingBottom;
-
-        // Draw the text.
-        canvas.drawText(mExampleString,
-                paddingLeft + (contentWidth - mTextWidth) / 2,
-                paddingTop + (contentHeight + mTextHeight) / 2,
-                mTextPaint);
-
-        // Draw the example drawable on top of the text.
-        if (mExampleDrawable != null) {
-            mExampleDrawable.setBounds(paddingLeft, paddingTop,
-                    paddingLeft + contentWidth, paddingTop + contentHeight);
-            mExampleDrawable.draw(canvas);
+            }
         }
-    }
-
-    /**
-     * Gets the example string attribute value.
-     *
-     * @return The example string attribute value.
-     */
-    public String getExampleString() {
-        return mExampleString;
-    }
-
-    /**
-     * Sets the view"s example string attribute value. In the example view, this string
-     * is the text to draw.
-     *
-     * @param exampleString The example string attribute value to use.
-     */
-    public void setExampleString(String exampleString) {
-        mExampleString = exampleString;
-        invalidateTextPaintAndMeasurements();
-    }
-
-    /**
-     * Gets the example color attribute value.
-     *
-     * @return The example color attribute value.
-     */
-    public int getExampleColor() {
-        return mExampleColor;
-    }
-
-    /**
-     * Sets the view"s example color attribute value. In the example view, this color
-     * is the font color.
-     *
-     * @param exampleColor The example color attribute value to use.
-     */
-    public void setExampleColor(int exampleColor) {
-        mExampleColor = exampleColor;
-        invalidateTextPaintAndMeasurements();
-    }
-
-    /**
-     * Gets the example dimension attribute value.
-     *
-     * @return The example dimension attribute value.
-     */
-    public float getExampleDimension() {
-        return mExampleDimension;
-    }
-
-    /**
-     * Sets the view"s example dimension attribute value. In the example view, this dimension
-     * is the font size.
-     *
-     * @param exampleDimension The example dimension attribute value to use.
-     */
-    public void setExampleDimension(float exampleDimension) {
-        mExampleDimension = exampleDimension;
-        invalidateTextPaintAndMeasurements();
-    }
-
-    /**
-     * Gets the example drawable attribute value.
-     *
-     * @return The example drawable attribute value.
-     */
-    public Drawable getExampleDrawable() {
-        return mExampleDrawable;
-    }
-
-    /**
-     * Sets the view"s example drawable attribute value. In the example view, this drawable is
-     * drawn above the text.
-     *
-     * @param exampleDrawable The example drawable attribute value to use.
-     */
-    public void setExampleDrawable(Drawable exampleDrawable) {
-        mExampleDrawable = exampleDrawable;
     }
 }
