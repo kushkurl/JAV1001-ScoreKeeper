@@ -1,17 +1,31 @@
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
      >
+    <HorizontalScrollView
+        android:id="@+id/hsv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:fillViewport="true"
+        android:measureAllChildren="false"
+        android:scrollbars="none" >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
 
-    <ImageView
-        android:id="@+id/myImageView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:alpha="0.5"
-        android:scaleType="fitXY"
-        app:srcCompat="@drawable/claycourt" />
+            <ImageView
+                android:id="@+id/myImageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0.5"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                app:srcCompat="@mipmap/claycourt" />
 
     <TextView
         android:id="@+id/textView2"
@@ -88,7 +102,7 @@
         android:layout_marginStart="45dp"
         android:layout_marginLeft="45dp"
         android:layout_marginTop="25dp"
-        app:srcCompat="@drawable/icon" />
+        app:srcCompat="@mipmap/icon" />
 
     <TextView
         android:id="@+id/set1_1"
@@ -263,7 +277,7 @@
             android:layout_width="29dp"
             android:layout_height="25dp"
             android:layout_toEndOf="@+id/set2_1"
-            android:text=""
+            android:text="1"
             tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
 
         <RadioButton
@@ -271,7 +285,7 @@
             android:layout_width="29dp"
             android:layout_height="25dp"
             android:layout_toEndOf="@+id/set2_2"
-            android:text=""
+            android:text="2"
             tools:ignore="TouchTargetSizeCheck" />
     </RadioGroup>
 
@@ -313,5 +327,7 @@
         android:background="#4D1406"
         android:text="@string/jump_points_by"
         android:textColor="@color/white" />
+        </RelativeLayout>
+    </HorizontalScrollView>
 
 </RelativeLayout>
