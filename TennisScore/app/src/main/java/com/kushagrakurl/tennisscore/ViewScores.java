@@ -65,28 +65,28 @@ public class ViewScores extends AppCompatActivity implements View.OnClickListene
 
         switch (view.getId()){
             case R.id.addScore:{
-                if( Math.abs(set11 - set12) < 2 ){
+                if( Math.abs(set11 - set12) < 2 && set11 < 6 && set12 < 6){
                     if (selectedPlayerID == 1){
-                        set1_1.setText(set11 += 1);
+                        set1_1.setText(set11 += jumpPointBy);
                     }
                     else {
-                        set1_2.setText(set12 += 1);
+                        set1_2.setText(set12 += jumpPointBy);
                     }
                 }
-                else if( Math.abs(set21 - set22) < 2 ){
+                else if( Math.abs(set21 - set22) < 2 && set21 < 6 && set22 < 6){
                     if (selectedPlayerID == 1){
-                        set2_1.setText(set21 += 1);
+                        set2_1.setText(set21 += jumpPointBy);
                     }
                     else {
-                        set2_2.setText(set22 += 1);
+                        set2_2.setText(set22 += jumpPointBy);
                     }
                 }
-                else if( Math.abs(set31 - set32) < 2 ){
+                else if( Math.abs(set31 - set32) < 2 && set31 < 6 && set32 < 6){
                     if (selectedPlayerID == 1){
-                        set3_1.setText(set31 += 1);
+                        set3_1.setText(set31 += jumpPointBy);
                     }
                     else {
-                        set3_2.setText(set32 += 1);
+                        set3_2.setText(set32 += jumpPointBy);
                     }
                 }
                 else {
@@ -99,26 +99,26 @@ public class ViewScores extends AppCompatActivity implements View.OnClickListene
             case R.id.removeScore:{
                 if( Math.abs(set11 - set12) < 2 && set11 > 0 && set12 > 0){
                     if (selectedPlayerID == 1){
-                        set1_1.setText(set11 -= 1);
+                        set1_1.setText(set11 -= jumpPointBy);
                     }
                     else {
-                        set1_2.setText(set12 -= 1);
+                        set1_2.setText(set12 -= jumpPointBy);
                     }
                 }
                 else if( Math.abs(set21 - set22) < 2 && set21 > 0 && set22 > 0){
                     if (selectedPlayerID == 1){
-                        set2_1.setText(set21 -= 1);
+                        set2_1.setText(set21 -= jumpPointBy);
                     }
                     else {
-                        set2_2.setText(set22 -= 1);
+                        set2_2.setText(set22 -= jumpPointBy);
                     }
                 }
                 else if( Math.abs(set31 - set32) < 2 && set31 > 0 && set32 > 0){
                     if (selectedPlayerID == 1){
-                        set3_1.setText(set31 -= 1);
+                        set3_1.setText(set31 -= jumpPointBy);
                     }
                     else {
-                        set3_2.setText(set32 -= 1);
+                        set3_2.setText(set32 -= jumpPointBy);
                     }
                 }
                 else {
