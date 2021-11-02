@@ -1,6 +1,3 @@
-//Kushagra Kurl - A00246944 
-//Jaskirat kaur - A00219135
-
 package com.kushagrakurl.tennisscore;
 
 import android.os.Bundle;
@@ -74,19 +71,26 @@ public class ViewScores extends AppCompatActivity implements View.OnClickListene
     @Override
     public void onClick(View view) {
         int playerID  = (int)radioGrp.getCheckedRadioButtonId();
-        pID=(RadioButton)findViewById(playerID);
-        String selectedPlayerID = pID.getText().toString();//Integer.parseInt(pID.getText().toString());
-        int jumpPointBy = (int) jumpVal.getValue();
-        int set11 = Integer.parseInt(set1_1.getText().toString());
-        int set12 = Integer.parseInt(set1_2.getText().toString());
-        int set21 = Integer.parseInt(set2_1.getText().toString());
-        int set22 = Integer.parseInt(set2_2.getText().toString());
-        int set31 = Integer.parseInt(set3_1.getText().toString());
-        int set32 = Integer.parseInt(set3_2.getText().toString());
+        if(playerID == -1){
+            alert.setMessage("Please select a player first.").setTitle("No player selected!");
+            AlertDialog alertBox = alert.create();
+            alertBox.setTitle("No player selected!");
+            alertBox.show();
+        }
+        else{
+            pID=(RadioButton)findViewById(playerID);
+            String selectedPlayerID = pID.getText().toString();//Integer.parseInt(pID.getText().toString());
+            int jumpPointBy = (int) jumpVal.getValue();
+            int set11 = Integer.parseInt(set1_1.getText().toString());
+            int set12 = Integer.parseInt(set1_2.getText().toString());
+            int set21 = Integer.parseInt(set2_1.getText().toString());
+            int set22 = Integer.parseInt(set2_2.getText().toString());
+            int set31 = Integer.parseInt(set3_1.getText().toString());
+            int set32 = Integer.parseInt(set3_2.getText().toString());
 
-        switch (view.getId()){
-            case R.id.addScore:{
-                if( (set11 < 6 && set12 < 6) || Math.abs(set11 - set12) < 2){
+            switch (view.getId()){
+                case R.id.addScore:{
+                    if( (set11 < 6 && set12 < 6) || Math.abs(set11 - set12) < 2){
 
                         if (selectedPlayerID.equals("1")) {
                             set11 = set11 + jumpPointBy;
@@ -96,8 +100,8 @@ public class ViewScores extends AppCompatActivity implements View.OnClickListene
                             set1_2.setText(String.valueOf(set12));
                         }
 
-                }
-                else if((set21 < 6 && set22 < 6) || Math.abs(set21 - set22) < 2){
+                    }
+                    else if((set21 < 6 && set22 < 6) || Math.abs(set21 - set22) < 2){
 
                         if (selectedPlayerID.equals("1")) {
                             set21 = set21 + jumpPointBy;
@@ -107,8 +111,8 @@ public class ViewScores extends AppCompatActivity implements View.OnClickListene
                             set2_2.setText(String.valueOf(set22));
                         }
 
-                }
-                else if((set31 < 6 && set32 < 6) || Math.abs(set31 - set32) < 2){
+                    }
+                    else if((set31 < 6 && set32 < 6) || Math.abs(set31 - set32) < 2){
 
                         if (selectedPlayerID.equals("1")) {
                             set31 = set31 + jumpPointBy;
@@ -118,55 +122,56 @@ public class ViewScores extends AppCompatActivity implements View.OnClickListene
                             set3_2.setText(String.valueOf(set32));
                         }
 
+                    }
+                    else {
+                        alert.setMessage("Cannot add score to final score").setTitle("Match Over!");
+                        AlertDialog alertBox = alert.create();
+                        alertBox.setTitle("Match Over!");
+                        alertBox.show();
+                    }
                 }
-                else {
-                    alert.setMessage("Cannot add score to final score").setTitle("Match Over!");
-                    AlertDialog alertBox = alert.create();
-                    alertBox.setTitle("Match Over!");
-                    alertBox.show();
-                }
-            }
-            break;
-            case R.id.removeScore:{
-                if( set11 < 6 || set12 < 6){
-                    if (selectedPlayerID.equals("1") && set11 > 0){
-                        set11 = (set11 - jumpPointBy) < 0 ? 0 : (set11 - jumpPointBy);
+                break;
+                case R.id.removeScore:{
+                    if( set31 > 0 || set32 > 0){
+                        if (selectedPlayerID.equals("1") && set31 > 0){
+                            set31 = (set31 - jumpPointBy) < 0 ? 0 : (set31 - jumpPointBy);
+                            set3_1.setText(String.valueOf(set31));
+                        }
+                        else if(selectedPlayerID.equals("2") && set32 > 0){
+                            set32 = (set32 - jumpPointBy) < 0 ? 0 : (set32 - jumpPointBy);
+                            set3_2.setText(String.valueOf(set32));
+                        }
+                    }
+                    else if( set21 > 0 || set22 > 0){
+                        if (selectedPlayerID.equals("1") && set21 > 0){
+                            set21 = (set21 - jumpPointBy) < 0 ? 0 : (set21 - jumpPointBy);
+                            set2_1.setText(String.valueOf(set21));
+                        }
+                        else if(selectedPlayerID.equals("2") && set22 > 0){
+                            set22 = (set22 - jumpPointBy) < 0 ? 0 : (set22 - jumpPointBy);
+                            set2_2.setText(String.valueOf(set22));
+                        }
+                    }
+                    else if( set11 > 0 || set12 > 0){
+                        if (selectedPlayerID.equals("1") && set11 > 0){
+                            set11 = (set11 - jumpPointBy) < 0 ? 0 : (set11 - jumpPointBy);
+                            set1_1.setText(String.valueOf(set11));
+                        }
+                        else if(selectedPlayerID.equals("2") && set12 > 0){
+                            set12 = (set12 - jumpPointBy) < 0 ? 0 : (set12 - jumpPointBy);
+                            set1_2.setText(String.valueOf(set12));
+                        }
+                    }
+                    else {
+                        alert.setMessage("Cannot subtract score from final score").setTitle("Match is about to start!");
+                        AlertDialog alertBox = alert.create();
+                        alertBox.setTitle("Match is about to start!");
+                        alertBox.show();
+                    }
 
-                        set1_1.setText(String.valueOf(set11));
-                    }
-                    else if(selectedPlayerID.equals("2") && set12 > 0){
-                        set12 = (set12 - jumpPointBy) < 0 ? 0 : (set12 - jumpPointBy);
-                        set1_2.setText(String.valueOf(set12));
-                    }
                 }
-                else if( set21 < 6 || set22 < 6){
-                    if (selectedPlayerID.equals("1") && set21 > 0){
-                        set21 = (set21 - jumpPointBy) < 0 ? 0 : (set21 - jumpPointBy);
-                        set2_1.setText(String.valueOf(set21));
-                    }
-                    else if(selectedPlayerID.equals("2") && set22 > 0){
-                        set22 = (set22 - jumpPointBy) < 0 ? 0 : (set22 - jumpPointBy);
-                        set2_2.setText(String.valueOf(set22));
-                    }
-                }
-                else if( set31 < 6 || set32 < 6){
-                    if (selectedPlayerID.equals("1") && set31 > 0){
-                        set31 = (set31 - jumpPointBy) < 0 ? 0 : (set31 - jumpPointBy);
-                        set3_1.setText(String.valueOf(set31));
-                    }
-                    else if(selectedPlayerID.equals("2") && set32 > 0){
-                        set32 = (set32 - jumpPointBy) < 0 ? 0 : (set32 - jumpPointBy);
-                        set3_2.setText(String.valueOf(set32));
-                    }
-                }
-                else {
-                    alert.setMessage("Cannot subtract score from final score").setTitle("Match Over!");
-                    AlertDialog alertBox = alert.create();
-                    alertBox.setTitle("Match Over!");
-                    alertBox.show();
-                }
-
             }
         }
+
     }
 }
