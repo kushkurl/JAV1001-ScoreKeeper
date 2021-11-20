@@ -8,7 +8,7 @@ com/kushagrakurl/tennisscore/databinding/ActivityMainBinding.java
  com.kushagrakurl.tennisscore.databinding.ActivityMainBinding
 com/kushagrakurl/tennisscore/databinding/FragmentFirstBinding.java
  com.kushagrakurl.tennisscore.databinding.FragmentFirstBinding
-com/kushagrakurl/tennisscore/databinding/SampleViewScoresBinding.java
- com.kushagrakurl.tennisscore.databinding.SampleViewScoresBinding
 com/kushagrakurl/tennisscore/ViewScores.java
  com.kushagrakurl.tennisscore.ViewScores
+com/kushagrakurl/tennisscore/databinding/SampleViewScoresBinding.java
+ com.kushagrakurl.tennisscore.databinding.SampleViewScoresBinding

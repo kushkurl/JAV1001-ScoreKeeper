@@ -41,38 +41,38 @@
 
         <TextView
             android:id="@+id/p1"
+            style="@style/CodeFont"
             android:layout_width="275dp"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_marginStart="25dp"
             android:layout_marginLeft="25dp"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="98dp"
             android:background="#cf6026"
             android:ems="3"
             android:inputType="textPersonName"
             android:minHeight="20dp"
             android:shadowRadius="@integer/material_motion_duration_long_1"
             android:text="@string/rafael_nadal_esp"
-            android:textColor="@color/white"
             tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
 
         <TextView
             android:id="@+id/p2"
+            style="@style/CodeFont"
             android:layout_width="275dp"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_marginStart="25dp"
             android:layout_marginLeft="25dp"
-            android:layout_marginTop="122dp"
+            android:layout_marginTop="125dp"
             android:background="#cf6026"
             android:ems="3"
             android:inputType="textPersonName"
             android:minHeight="20dp"
             android:shadowRadius="@integer/material_motion_duration_long_1"
             android:text="@string/roger_federer_swi"
-            android:textColor="@color/white"
             tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
 
         <TextView
@@ -90,8 +90,7 @@
             android:text="@string/men_s_singles_final"
             android:textAlignment="gravity"
             android:textColor="@color/white"
-            android:textSize="10dp"
-            />
+            android:textSize="10dp" />
 
         <ImageView
             android:id="@+id/imageView3"
@@ -102,59 +101,51 @@
             android:layout_marginStart="45dp"
             android:layout_marginLeft="45dp"
             android:layout_marginTop="25dp"
-            app:srcCompat="@mipmap/icon" />
+            app:srcCompat="@mipmap/icon" /><![CDATA[
+
+        0
+        android:textColor="@color/white"
+        android:textSize="1.5dp"
+        tools:ignore="TextContrastCheck,TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
+
+        ]]>
 
         <TextView
             android:id="@+id/set1_1"
+            style="@style/CodeFont"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignTop="@+id/textView2"
             android:layout_marginStart="5dp"
             android:layout_marginLeft="305dp"
-            android:layout_marginTop="70dp"
+            android:layout_marginTop="68dp"
             android:layout_toEndOf="@+id/p1"
             android:background="#cf6026"
             android:inputType="textPersonName"
             android:minWidth="18dp"
             android:minHeight="19dp"
             android:shadowRadius="@integer/material_motion_duration_long_1"
-            android:textAlignment="center"
             android:text="0"
-            tools:ignore="TouchTargetSizeCheck" />0
-        android:textColor="@color/white"
-        android:textSize="1.5dp"
-        tools:ignore="TextContrastCheck,TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
+            android:textAlignment="center"
+            tools:ignore="TouchTargetSizeCheck" /><![CDATA[
 
-        <TextView
-            android:id="@+id/set2_1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="27dp"
-            android:layout_marginLeft="327dp"
-            android:layout_marginTop="100dp"
-            android:layout_toEndOf="@+id/p1"
-            android:background="#cf6026"
-            android:inputType="textPersonName"
-            android:minWidth="18dp"
-            android:minHeight="19dp"
-            android:shadowRadius="@integer/material_motion_duration_long_1"
-            android:text="0"
-            android:textAlignment="center"
-            tools:ignore="TouchTargetSizeCheck" />0
+        0
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="1.5dp"
         tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
 
+        ]]>
+
         <TextView
-            android:id="@+id/set3_1"
+            android:id="@+id/set2_1"
+            style="@style/CodeFont"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
-            android:layout_marginStart="50dp"
-            android:layout_marginLeft="350dp"
-            android:layout_marginTop="100dp"
+            android:layout_marginStart="27dp"
+            android:layout_marginLeft="327dp"
+            android:layout_marginTop="98dp"
             android:layout_toEndOf="@+id/p1"
             android:background="#cf6026"
             android:inputType="textPersonName"
@@ -163,62 +154,50 @@
             android:shadowRadius="@integer/material_motion_duration_long_1"
             android:text="0"
             android:textAlignment="center"
-            tools:ignore="TouchTargetSizeCheck" />0
+            tools:ignore="TouchTargetSizeCheck" /><![CDATA[
+
+        0
         android:textColor="@color/white"
         android:textSize="1.5dp"
         tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
 
-        <TextView
-            android:id="@+id/set1_2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="5dp"
-            android:layout_marginLeft="305dp"
-            android:layout_marginTop="122dp"
-            android:layout_toEndOf="@+id/p2"
-            android:background="#cf6026"
-            android:inputType="textPersonName"
-            android:minWidth="18dp"
-            android:minHeight="19dp"
-            android:shadowRadius="@integer/material_motion_duration_long_1"
-            android:textAlignment="center"
-            android:text="0"
-            tools:ignore="TouchTargetSizeCheck" />0
+        0
         android:textColor="@color/white"
         android:textSize="1.5dp"
         tools:ignore="TouchTargetSizeCheck,TextContrastCheck,DuplicateSpeakableTextCheck" />
 
-        <TextView
-            android:id="@+id/set2_2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="27dp"
-            android:layout_marginLeft="327dp"
-            android:layout_marginTop="122dp"
-            android:layout_toEndOf="@+id/p2"
-            android:background="#cf6026"
-            android:inputType="textPersonName"
-            android:minWidth="18dp"
-            android:minHeight="19dp"
-            android:shadowRadius="@integer/material_motion_duration_long_1"
-            android:textAlignment="center"
-            android:text="0"
-            tools:ignore="TouchTargetSizeCheck" />0
-        android:textColor="@color/white"
-        android:textSize="1.5sp"
-        tools:ignore="TouchTargetSizeCheck,TextContrastCheck"
-        android:importantForAutofill="no" />
+
+
+        ]]>
 
         <TextView
-            android:id="@+id/set3_2"
+            android:id="@+id/set3_1"
+            style="@style/CodeFont"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_marginStart="50dp"
             android:layout_marginLeft="350dp"
-            android:layout_marginTop="122dp"
+            android:layout_marginTop="98dp"
+            android:layout_toEndOf="@+id/p1"
+            android:background="#cf6026"
+            android:inputType="textPersonName"
+            android:minWidth="18dp"
+            android:minHeight="19dp"
+            android:shadowRadius="@integer/material_motion_duration_long_1"
+            android:text="0"
+            android:textAlignment="center"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/set1_2"
+            style="@style/CodeFont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="305dp"
+            android:layout_marginTop="125dp"
             android:layout_toEndOf="@+id/p2"
             android:background="#cf6026"
             android:inputType="textPersonName"
@@ -227,10 +206,60 @@
             android:shadowRadius="@integer/material_motion_duration_long_1"
             android:text="0"
             android:textAlignment="center"
-            tools:ignore="TouchTargetSizeCheck" />0
+            tools:ignore="TouchTargetSizeCheck" /><![CDATA[
+
+        0
+        android:textColor="@color/white"
+        android:textSize="1.5sp"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck"
+        android:importantForAutofill="no" />
+
+        ]]>
+
+        <TextView
+            android:id="@+id/set2_2"
+            style="@style/CodeFont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="27dp"
+            android:layout_marginLeft="327dp"
+            android:layout_marginTop="125dp"
+            android:layout_toEndOf="@+id/p2"
+            android:background="#cf6026"
+            android:inputType="textPersonName"
+            android:minWidth="18dp"
+            android:minHeight="19dp"
+            android:shadowRadius="@integer/material_motion_duration_long_1"
+            android:text="0"
+            android:textAlignment="center"
+            tools:ignore="TouchTargetSizeCheck" /><![CDATA[
+
+        0
         android:textColor="#000000"
         android:textSize="1.5sp"
         tools:ignore="TouchTargetSizeCheck" />
+
+        ]]>
+
+        <TextView
+            android:id="@+id/set3_2"
+            style="@style/CodeFont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="350dp"
+            android:layout_marginTop="125dp"
+            android:layout_toEndOf="@+id/p2"
+            android:background="#cf6026"
+            android:inputType="textPersonName"
+            android:minWidth="18dp"
+            android:minHeight="19dp"
+            android:shadowRadius="@integer/material_motion_duration_long_1"
+            android:text="0"
+            android:textAlignment="center"
+            tools:ignore="TouchTargetSizeCheck" />
 
         <Button
             android:id="@+id/addScore"
@@ -261,10 +290,10 @@
             tools:ignore="TouchTargetSizeCheck" />
 
         <RadioGroup
+            android:id="@+id/radioGroup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignStart="@+id/set3_1"
-            android:id="@+id/radioGroup"
             android:layout_alignParentTop="true"
             android:layout_marginStart="20dp"
             android:layout_marginLeft="370dp"
