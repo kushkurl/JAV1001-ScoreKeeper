@@ -1,6 +1,7 @@
 package com.kushagrakurl.tennisscore;
 
 import android.os.Bundle;
+import android.view.ContextThemeWrapper;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
@@ -33,7 +34,8 @@ public class ViewScores extends AppCompatActivity implements View.OnClickListene
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.sample_view_scores);
+        setContentView(R.layout.activity_main);
+
 
         radioGrp = (RadioGroup)findViewById(R.id.radioGroup);
         jumpVal = (Slider)findViewById(R.id.jumpValue);
@@ -50,14 +52,14 @@ public class ViewScores extends AppCompatActivity implements View.OnClickListene
         set3_1 = (TextView)findViewById(R.id.set3_1);
         set3_2 = (TextView)findViewById(R.id.set3_2);
 
-        alert = new AlertDialog.Builder(this);
+        alert = new AlertDialog.Builder(new ContextThemeWrapper(this, R.style.AlertDialogCustom));
     }
 
     @Override
     public void onClick(View view) {
         int playerID  = (int)radioGrp.getCheckedRadioButtonId();
         if(playerID == -1){
-            alert.setMessage("Please select a player first.").setTitle("No player selected!");
+            alert.setMessage("Please select a player first.");//.setTitle("No player selected!");
             AlertDialog alertBox = alert.create();
             alertBox.setTitle("No player selected!");
             alertBox.show();
@@ -109,7 +111,7 @@ public class ViewScores extends AppCompatActivity implements View.OnClickListene
 
                     }
                     else {
-                        alert.setMessage("Cannot add score to final score").setTitle("Match Over!");
+                        alert.setMessage("Cannot add score to final score");//.setTitle("Match Over!");
                         AlertDialog alertBox = alert.create();
                         alertBox.setTitle("Match Over!");
                         alertBox.show();
@@ -148,7 +150,7 @@ public class ViewScores extends AppCompatActivity implements View.OnClickListene
                         }
                     }
                     else {
-                        alert.setMessage("Cannot subtract score from final score").setTitle("Match is about to start!");
+                        alert.setMessage("Cannot subtract score from final score");//.setTitle("Match is about to start!");
                         AlertDialog alertBox = alert.create();
                         alertBox.setTitle("Match is about to start!");
                         alertBox.show();

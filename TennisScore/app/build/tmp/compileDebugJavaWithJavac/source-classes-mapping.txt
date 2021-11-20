@@ -1,14 +1,12 @@
-com/kushagrakurl/tennisscore/BuildConfig.java
- com.kushagrakurl.tennisscore.BuildConfig
 com/kushagrakurl/tennisscore/databinding/ContentMainBinding.java
  com.kushagrakurl.tennisscore.databinding.ContentMainBinding
+com/kushagrakurl/tennisscore/BuildConfig.java
+ com.kushagrakurl.tennisscore.BuildConfig
 com/kushagrakurl/tennisscore/databinding/FragmentSecondBinding.java
  com.kushagrakurl.tennisscore.databinding.FragmentSecondBinding
+com/kushagrakurl/tennisscore/ViewScores.java
+ com.kushagrakurl.tennisscore.ViewScores
 com/kushagrakurl/tennisscore/databinding/ActivityMainBinding.java
  com.kushagrakurl.tennisscore.databinding.ActivityMainBinding
 com/kushagrakurl/tennisscore/databinding/FragmentFirstBinding.java
  com.kushagrakurl.tennisscore.databinding.FragmentFirstBinding
-com/kushagrakurl/tennisscore/ViewScores.java
- com.kushagrakurl.tennisscore.ViewScores
-com/kushagrakurl/tennisscore/databinding/SampleViewScoresBinding.java
- com.kushagrakurl.tennisscore.databinding.SampleViewScoresBinding

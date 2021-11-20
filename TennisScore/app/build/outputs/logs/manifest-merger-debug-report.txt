@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Shiva\AndroidStudioProjects\JAV1001-ScoreKeeper-master\TennisScore\app\src\main\AndroidManifest.xml:2:1-22:12
-INJECTED from C:\Users\Shiva\AndroidStudioProjects\JAV1001-ScoreKeeper-master\TennisScore\app\src\main\AndroidManifest.xml:2:1-22:12
-INJECTED from C:\Users\Shiva\AndroidStudioProjects\JAV1001-ScoreKeeper-master\TennisScore\app\src\main\AndroidManifest.xml:2:1-22:12
-INJECTED from C:\Users\Shiva\AndroidStudioProjects\JAV1001-ScoreKeeper-master\TennisScore\app\src\main\AndroidManifest.xml:2:1-22:12
+ADDED from C:\Users\Shiva\Documents\GitHub\JAV1001-ScoreKeeper\TennisScore\app\src\main\AndroidManifest.xml:2:1-22:12
+INJECTED from C:\Users\Shiva\Documents\GitHub\JAV1001-ScoreKeeper\TennisScore\app\src\main\AndroidManifest.xml:2:1-22:12
+INJECTED from C:\Users\Shiva\Documents\GitHub\JAV1001-ScoreKeeper\TennisScore\app\src\main\AndroidManifest.xml:2:1-22:12
+INJECTED from C:\Users\Shiva\Documents\GitHub\JAV1001-ScoreKeeper\TennisScore\app\src\main\AndroidManifest.xml:2:1-22:12
 MERGED from [androidx.databinding:viewbinding:7.0.2] C:\Users\Shiva\.gradle\caches\transforms-3\314e1866fb012a7eb1eea66695bd9e77\transformed\jetified-viewbinding-7.0.2\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-ui:2.3.5] C:\Users\Shiva\.gradle\caches\transforms-3\e8717e30bbc4cf00dfb30661685e96da\transformed\navigation-ui-2.3.5\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\Shiva\.gradle\caches\transforms-3\25012fcc08d4c5cf5a2844c1a21a6fbe\transformed\material-1.4.0\AndroidManifest.xml:17:1-24:12
@@ -44,25 +44,25 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Shiva\.gradle\ca
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Shiva\.gradle\caches\transforms-3\8ca7186ef83368b8549809152ed428ce\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\Shiva\.gradle\caches\transforms-3\485578c608519582fc751ff2f7c88476\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\Shiva\.gradle\caches\transforms-3\18e5cb54f886f7aa7e26ad4e22b3ac23\transformed\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\Users\Shiva\AndroidStudioProjects\JAV1001-ScoreKeeper-master\TennisScore\app\src\main\AndroidManifest.xml:2:1-22:12
-INJECTED from C:\Users\Shiva\AndroidStudioProjects\JAV1001-ScoreKeeper-master\TennisScore\app\src\main\AndroidManifest.xml:2:1-22:12
-INJECTED from C:\Users\Shiva\AndroidStudioProjects\JAV1001-ScoreKeeper-master\TennisScore\app\src\main\AndroidManifest.xml:2:1-22:12
+INJECTED from C:\Users\Shiva\Documents\GitHub\JAV1001-ScoreKeeper\TennisScore\app\src\main\AndroidManifest.xml:2:1-22:12
+INJECTED from C:\Users\Shiva\Documents\GitHub\JAV1001-ScoreKeeper\TennisScore\app\src\main\AndroidManifest.xml:2:1-22:12
+INJECTED from C:\Users\Shiva\Documents\GitHub\JAV1001-ScoreKeeper\TennisScore\app\src\main\AndroidManifest.xml:2:1-22:12
 	package
-		ADDED from C:\Users\Shiva\AndroidStudioProjects\JAV1001-ScoreKeeper-master\TennisScore\app\src\main\AndroidManifest.xml:3:5-43
-		INJECTED from C:\Users\Shiva\AndroidStudioProjects\JAV1001-ScoreKeeper-master\TennisScore\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Shiva\AndroidStudioProjects\JAV1001-ScoreKeeper-master\TennisScore\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Shiva\Documents\GitHub\JAV1001-ScoreKeeper\TennisScore\app\src\main\AndroidManifest.xml:3:5-43
+		INJECTED from C:\Users\Shiva\Documents\GitHub\JAV1001-ScoreKeeper\TennisScore\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Shiva\Documents\GitHub\JAV1001-ScoreKeeper\TennisScore\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\Shiva\AndroidStudioProjects\JAV1001-ScoreKeeper-master\TennisScore\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Shiva\AndroidStudioProjects\JAV1001-ScoreKeeper-master\TennisScore\app\src\main\AndroidManifest.xml:2:1-22:12
-		INJECTED from C:\Users\Shiva\AndroidStudioProjects\JAV1001-ScoreKeeper-master\TennisScore\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Shiva\Documents\GitHub\JAV1001-ScoreKeeper\TennisScore\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Shiva\Documents\GitHub\JAV1001-ScoreKeeper\TennisScore\app\src\main\AndroidManifest.xml:2:1-22:12
+		INJECTED from C:\Users\Shiva\Documents\GitHub\JAV1001-ScoreKeeper\TennisScore\app\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from C:\Users\Shiva\AndroidStudioProjects\JAV1001-ScoreKeeper-master\TennisScore\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Shiva\AndroidStudioProjects\JAV1001-ScoreKeeper-master\TennisScore\app\src\main\AndroidManifest.xml:2:1-22:12
-		INJECTED from C:\Users\Shiva\AndroidStudioProjects\JAV1001-ScoreKeeper-master\TennisScore\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Shiva\Documents\GitHub\JAV1001-ScoreKeeper\TennisScore\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Shiva\Documents\GitHub\JAV1001-ScoreKeeper\TennisScore\app\src\main\AndroidManifest.xml:2:1-22:12
+		INJECTED from C:\Users\Shiva\Documents\GitHub\JAV1001-ScoreKeeper\TennisScore\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\Shiva\AndroidStudioProjects\JAV1001-ScoreKeeper-master\TennisScore\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\Shiva\Documents\GitHub\JAV1001-ScoreKeeper\TennisScore\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\Users\Shiva\AndroidStudioProjects\JAV1001-ScoreKeeper-master\TennisScore\app\src\main\AndroidManifest.xml:5:5-20:19
+ADDED from C:\Users\Shiva\Documents\GitHub\JAV1001-ScoreKeeper\TennisScore\app\src\main\AndroidManifest.xml:5:5-20:19
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\Shiva\.gradle\caches\transforms-3\25012fcc08d4c5cf5a2844c1a21a6fbe\transformed\material-1.4.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\Shiva\.gradle\caches\transforms-3\25012fcc08d4c5cf5a2844c1a21a6fbe\transformed\material-1.4.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.1] C:\Users\Shiva\.gradle\caches\transforms-3\81808270a5cc0559f2b9db87cb315b87\transformed\constraintlayout-2.1.1\AndroidManifest.xml:9:5-20
@@ -74,37 +74,37 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Sh
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.5.0] C:\Users\Shiva\.gradle\caches\transforms-3\255d63c0f9f8f5d12ab3191ffb377750\transformed\core-1.5.0\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from C:\Users\Shiva\AndroidStudioProjects\JAV1001-ScoreKeeper-master\TennisScore\app\src\main\AndroidManifest.xml:10:9-35
+		ADDED from C:\Users\Shiva\Documents\GitHub\JAV1001-ScoreKeeper\TennisScore\app\src\main\AndroidManifest.xml:10:9-35
 	android:label
-		ADDED from C:\Users\Shiva\AndroidStudioProjects\JAV1001-ScoreKeeper-master\TennisScore\app\src\main\AndroidManifest.xml:8:9-41
+		ADDED from C:\Users\Shiva\Documents\GitHub\JAV1001-ScoreKeeper\TennisScore\app\src\main\AndroidManifest.xml:8:9-41
 	android:roundIcon
-		ADDED from C:\Users\Shiva\AndroidStudioProjects\JAV1001-ScoreKeeper-master\TennisScore\app\src\main\AndroidManifest.xml:9:9-54
+		ADDED from C:\Users\Shiva\Documents\GitHub\JAV1001-ScoreKeeper\TennisScore\app\src\main\AndroidManifest.xml:9:9-54
 	android:icon
-		ADDED from C:\Users\Shiva\AndroidStudioProjects\JAV1001-ScoreKeeper-master\TennisScore\app\src\main\AndroidManifest.xml:7:9-56
+		ADDED from C:\Users\Shiva\Documents\GitHub\JAV1001-ScoreKeeper\TennisScore\app\src\main\AndroidManifest.xml:7:9-56
 	android:allowBackup
-		ADDED from C:\Users\Shiva\AndroidStudioProjects\JAV1001-ScoreKeeper-master\TennisScore\app\src\main\AndroidManifest.xml:6:9-35
+		ADDED from C:\Users\Shiva\Documents\GitHub\JAV1001-ScoreKeeper\TennisScore\app\src\main\AndroidManifest.xml:6:9-35
 	android:theme
-		ADDED from C:\Users\Shiva\AndroidStudioProjects\JAV1001-ScoreKeeper-master\TennisScore\app\src\main\AndroidManifest.xml:11:9-49
+		ADDED from C:\Users\Shiva\Documents\GitHub\JAV1001-ScoreKeeper\TennisScore\app\src\main\AndroidManifest.xml:11:9-49
 activity#com.kushagrakurl.tennisscore.ViewScores
-ADDED from C:\Users\Shiva\AndroidStudioProjects\JAV1001-ScoreKeeper-master\TennisScore\app\src\main\AndroidManifest.xml:12:9-19:20
+ADDED from C:\Users\Shiva\Documents\GitHub\JAV1001-ScoreKeeper\TennisScore\app\src\main\AndroidManifest.xml:12:9-19:20
 	android:exported
-		ADDED from C:\Users\Shiva\AndroidStudioProjects\JAV1001-ScoreKeeper-master\TennisScore\app\src\main\AndroidManifest.xml:13:13-36
+		ADDED from C:\Users\Shiva\Documents\GitHub\JAV1001-ScoreKeeper\TennisScore\app\src\main\AndroidManifest.xml:13:13-36
 	android:name
-		ADDED from C:\Users\Shiva\AndroidStudioProjects\JAV1001-ScoreKeeper-master\TennisScore\app\src\main\AndroidManifest.xml:12:19-45
+		ADDED from C:\Users\Shiva\Documents\GitHub\JAV1001-ScoreKeeper\TennisScore\app\src\main\AndroidManifest.xml:12:19-45
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\Shiva\AndroidStudioProjects\JAV1001-ScoreKeeper-master\TennisScore\app\src\main\AndroidManifest.xml:15:13-18:29
+ADDED from C:\Users\Shiva\Documents\GitHub\JAV1001-ScoreKeeper\TennisScore\app\src\main\AndroidManifest.xml:15:13-18:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Shiva\AndroidStudioProjects\JAV1001-ScoreKeeper-master\TennisScore\app\src\main\AndroidManifest.xml:16:17-69
+ADDED from C:\Users\Shiva\Documents\GitHub\JAV1001-ScoreKeeper\TennisScore\app\src\main\AndroidManifest.xml:16:17-69
 	android:name
-		ADDED from C:\Users\Shiva\AndroidStudioProjects\JAV1001-ScoreKeeper-master\TennisScore\app\src\main\AndroidManifest.xml:16:25-66
+		ADDED from C:\Users\Shiva\Documents\GitHub\JAV1001-ScoreKeeper\TennisScore\app\src\main\AndroidManifest.xml:16:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Shiva\AndroidStudioProjects\JAV1001-ScoreKeeper-master\TennisScore\app\src\main\AndroidManifest.xml:17:17-77
+ADDED from C:\Users\Shiva\Documents\GitHub\JAV1001-ScoreKeeper\TennisScore\app\src\main\AndroidManifest.xml:17:17-77
 	android:name
-		ADDED from C:\Users\Shiva\AndroidStudioProjects\JAV1001-ScoreKeeper-master\TennisScore\app\src\main\AndroidManifest.xml:17:27-74
+		ADDED from C:\Users\Shiva\Documents\GitHub\JAV1001-ScoreKeeper\TennisScore\app\src\main\AndroidManifest.xml:17:27-74
 uses-sdk
-INJECTED from C:\Users\Shiva\AndroidStudioProjects\JAV1001-ScoreKeeper-master\TennisScore\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\Shiva\AndroidStudioProjects\JAV1001-ScoreKeeper-master\TennisScore\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\Shiva\AndroidStudioProjects\JAV1001-ScoreKeeper-master\TennisScore\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Shiva\Documents\GitHub\JAV1001-ScoreKeeper\TennisScore\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\Shiva\Documents\GitHub\JAV1001-ScoreKeeper\TennisScore\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Shiva\Documents\GitHub\JAV1001-ScoreKeeper\TennisScore\app\src\main\AndroidManifest.xml
 MERGED from [androidx.databinding:viewbinding:7.0.2] C:\Users\Shiva\.gradle\caches\transforms-3\314e1866fb012a7eb1eea66695bd9e77\transformed\jetified-viewbinding-7.0.2\AndroidManifest.xml:20:5-44
 MERGED from [androidx.databinding:viewbinding:7.0.2] C:\Users\Shiva\.gradle\caches\transforms-3\314e1866fb012a7eb1eea66695bd9e77\transformed\jetified-viewbinding-7.0.2\AndroidManifest.xml:20:5-44
 MERGED from [androidx.navigation:navigation-ui:2.3.5] C:\Users\Shiva\.gradle\caches\transforms-3\e8717e30bbc4cf00dfb30661685e96da\transformed\navigation-ui-2.3.5\AndroidManifest.xml:20:5-22:41
@@ -185,13 +185,13 @@ MERGED from [androidx.print:print:1.0.0] C:\Users\Shiva\.gradle\caches\transform
 MERGED from [androidx.print:print:1.0.0] C:\Users\Shiva\.gradle\caches\transforms-3\485578c608519582fc751ff2f7c88476\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\Shiva\.gradle\caches\transforms-3\18e5cb54f886f7aa7e26ad4e22b3ac23\transformed\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\Shiva\.gradle\caches\transforms-3\18e5cb54f886f7aa7e26ad4e22b3ac23\transformed\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:20:5-22:41
-INJECTED from C:\Users\Shiva\AndroidStudioProjects\JAV1001-ScoreKeeper-master\TennisScore\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\Shiva\AndroidStudioProjects\JAV1001-ScoreKeeper-master\TennisScore\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Shiva\Documents\GitHub\JAV1001-ScoreKeeper\TennisScore\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Shiva\Documents\GitHub\JAV1001-ScoreKeeper\TennisScore\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from C:\Users\Shiva\AndroidStudioProjects\JAV1001-ScoreKeeper-master\TennisScore\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Shiva\AndroidStudioProjects\JAV1001-ScoreKeeper-master\TennisScore\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Shiva\AndroidStudioProjects\JAV1001-ScoreKeeper-master\TennisScore\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Shiva\Documents\GitHub\JAV1001-ScoreKeeper\TennisScore\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Shiva\Documents\GitHub\JAV1001-ScoreKeeper\TennisScore\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Shiva\Documents\GitHub\JAV1001-ScoreKeeper\TennisScore\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\Shiva\AndroidStudioProjects\JAV1001-ScoreKeeper-master\TennisScore\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Shiva\AndroidStudioProjects\JAV1001-ScoreKeeper-master\TennisScore\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Shiva\AndroidStudioProjects\JAV1001-ScoreKeeper-master\TennisScore\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Shiva\Documents\GitHub\JAV1001-ScoreKeeper\TennisScore\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Shiva\Documents\GitHub\JAV1001-ScoreKeeper\TennisScore\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Shiva\Documents\GitHub\JAV1001-ScoreKeeper\TennisScore\app\src\main\AndroidManifest.xml
